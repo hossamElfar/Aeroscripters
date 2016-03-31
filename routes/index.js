@@ -19,5 +19,9 @@ router.get('/api/data/news',function(req,res){
   var news =  require('../news.json');
   res.json( news );
 });
+router.get('/api/data/dummy',function(req,res){
+  var dummy =  require('../reservDummy.json');
+  res.json( dummy );
+});
 
 module.exports = router;

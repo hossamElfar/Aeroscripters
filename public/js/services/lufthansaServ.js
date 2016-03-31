@@ -23,6 +23,11 @@ lufthansa.factory('lufthansaServ', function ($http) {
         },
         getNews : function(){
             return $http.get('/api/data/news');
+        },
+        getReservDummy : function() {
+            return $http.get('/api/data/dummy');
         }
+        // You can add here http get to you dummyData and get the result at the mainCtrl
+        // Yous should make getters and setters for all your functions here
     };
 });
