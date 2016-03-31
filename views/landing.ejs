@@ -58,6 +58,7 @@
 
 		<!-- Modernizr JS -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
+
 		<script src="js/angular.min.js"></script>
 		<script src="js/angular-route.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
@@ -71,6 +72,7 @@
 		<script src="js/controllers/mainCtrl.js"></script>
 		<script src="js/services/lufthansaServ.js"></script>
 
+
 		<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -80,7 +82,14 @@
 
 	</head>
 	<body>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+	
+    <script src="js/core.js"></script>
+    <script src="js/controllers/mainCtrl.js"></script>
+    <script src="js/controllers/reservCtrl.js"></script>
+    <script src="js/services/Service.js"></script>
 	<div id="fh5co-page">
 		<nav class="fh5co-nav-style-1" role="navigation" data-offcanvass-position="fh5co-offcanvass-left">
 			<div class="container">
@@ -97,11 +106,12 @@
 					</div>
 				</div>
 				  </div>
-				<div class="col-lg-6 col-md-5 col-sm-5 text-center fh5co-link-wrap">
+				<div class="col-lg-6 col-md-5 col-sm-5 text-center fh5co-link-wrap" ng-controller="mainCtrl">
 					<ul data-offcanvass="yes">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#">My bookings</a></li>
 						<li><a href="#">My past flights</a></li>
+						<li><button type="button" class="btn btn-primary" id='btnSearch' ng-click='directToReservation()'>Reserve</button></li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-4 text-right fh5co-link-wrap">
@@ -112,14 +122,13 @@
 
  <!--comment-->
 
-		<div ng-view>
 
-		</div>
 <!--comment-->
 
 
 
-
+<div ng-view>
+</div>
 	<div class="fh5co-footer-style-3">
 			<div class="container">
 				<div class="row p-b">
@@ -170,6 +179,8 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script src="js/jquery/jquery.splitflap.js"></script>
+
+
 
 	</body>
 </html>

@@ -2,6 +2,7 @@
  * Main Controller
  */
 lufthansa.controller('mainCtrl', function($scope,lufthansaServ,$location) {
+
     /*----------- Angular Bootstrap Datepicker -----------*/
     $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
     $scope.format = $scope.formats[3];
@@ -80,4 +81,21 @@ lufthansa.controller('mainCtrl', function($scope,lufthansaServ,$location) {
     offers();
     /* Get news on page render  */
     news();
+
+
+
+
+  $scope.directToReservation = function() {
+    $location.url('/reservation');
+  };
+  $scope.directToOutgoingFlights = function() {
+    $location.url('/outgoingFlights');
+  };
+  //Add the direction to your own partial function.
+  //Just call this method to redirect to any other partial on your html
+  //Add all your functions here
+  //make Setters here for your functions and call them to lufthansaServ to
+  //be accessable later by any scope and by any ctrl
+  AirportCodes();
 });
+
