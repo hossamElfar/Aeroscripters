@@ -34,6 +34,18 @@ lufthansa.controller('mainCtrl', function($scope,lufthansaServ,$location) {
             $scope.Airports = airports;
         });
     };
+    /* Retrieve List of Offers */
+    function offers(){
+      lufthansaServ.getOffers().success(function(Offers){
+         $scope.offers = Offers;
+      });
+    };
+    /* Retrieve List of News */
+    function news(){
+        lufthansaServ.getNews().success(function(News){
+            $scope.news = News;
+        });
+    };
 
     /* Record User's Selected Origin Airport  */
     $scope.SetOriginAirport = function(originAirport) {
@@ -61,8 +73,11 @@ lufthansa.controller('mainCtrl', function($scope,lufthansaServ,$location) {
                 });
         });
     })(jQuery);
-    this.flip();
+
     /* Get Airports on page render  */
     AirportCodes();
-
+    /* Get offers on page render  */
+    offers();
+    /* Get news on page render  */
+    news();
 });

@@ -17,6 +17,12 @@ lufthansa.factory('lufthansaServ', function ($http) {
         },
         getSelectedDestinationAirport : function() {
             return this.selectedDestinationAirport;
+        },
+        getOffers : function(){
+            return $http.get('/api/data/offers');
+        },
+        getNews : function(){
+            return $http.get('/api/data/news');
         }
     };
 });

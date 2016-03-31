@@ -1,3 +1,4 @@
+<!--Adding some scroll-->
 <div class="fh5co-cover fh5co-cover-style-2 " data-stellar-background-ratio="0.5" data-next="yes"
      style="background-image: url(images/paris.jpg);">
     <div class="fh5co-overlay"></div>
@@ -107,6 +108,7 @@
         </div>
     </div>
 </div>
+<!--/adding some-->
 <!--comment-->
 
 
@@ -122,55 +124,20 @@
             </div>
         </div>
         <div class="row p-b">
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+            <!--Dumpy data for offers-->
+            <div  ng-repeat="x in offers" class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
                 <div class="fh5co-post wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".5s">
 
                     <div class="fh5co-post-text">
-                        <h3><a href="#">Offer #1</a></h3>
+                        <h3><a href="#">{{x.title}}</a></h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {{x.offer}}
                         </p>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-                <div class="fh5co-post wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".5s">
 
-                    <div class="fh5co-post-text">
-                        <h3><a href="#">Offer #2</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="clearfix visible-sm-block"></div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
-                <div class="fh5co-post wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".5s">
-
-                    <div class="fh5co-post-text">
-                        <h3><a href="#">Offer #3</a></h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
             <div class="clearfix visible-sm-block"></div>
         </div>
 
@@ -188,49 +155,21 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft" data-wow-duration=".5s"
+            <!--Dumpy data for news-->
+            <div ng-repeat="x in news" class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft" data-wow-duration=".5s"
                  data-wow-delay=".5s">
                 <a href="#" class="link-block">
-                    <figure><img src="images/img_same_dimension_1.jpg" alt="Image" class="img-responsive img-rounded">
+                    <figure><img src={{x.imgUrl}} alt="Image" class="img-responsive img-rounded">
                     </figure>
-                    <h3>News #1</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
-
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft" data-wow-duration=".5s"
-                 data-wow-delay=".5s">
-                <a href="#" class="link-block">
-                    <figure><img src="images/img_same_dimension_2.jpg" alt="Image" class="img-responsive img-rounded">
-                    </figure>
-                    <h3>News #2</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
+                    <h3>{{x.title}}</h3>
+                    <p>
+                        {{x.news}}
+                    </p>
 
                 </a>
             </div>
             <div class="clearfix visible-sm-block"></div>
-            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft" data-wow-duration=".5s"
-                 data-wow-delay=".5s">
-                <a href="#" class="link-block">
-                    <figure><img src="images/img_same_dimension_3.jpg" alt="Image" class="img-responsive img-rounded">
-                    </figure>
-                    <h3>News #3</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 wow fadeInLeft" data-wow-duration=".5s"
-                 data-wow-delay=".5s">
-                <a href="#" class="link-block">
-                    <figure><img src="images/img_same_dimension_4.jpg" alt="Image" class="img-responsive img-rounded">
-                    </figure>
-                    <h3>News #4</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
-                </a>
-            </div>
         </div>
     </div>
 </div>
+
