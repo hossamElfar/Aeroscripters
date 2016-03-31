@@ -58,10 +58,19 @@
 
 		<!-- Modernizr JS -->
 		<script src="js/modernizr-2.6.2.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
-					<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
-	          <script src ="js/core.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/ui-bootstrap-tpls-1.2.5.min.js"></script>
+		<script src ="js/core.js"></script>
+		<script src="js/controllers/mainCtrl.js"></script>
+		<script src="js/services/lufthansaServ.js"></script>
+
 		<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -142,11 +151,7 @@
 	</div>
 	<!-- END page-->
 
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Owl Carousel -->
@@ -165,18 +170,6 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script src="js/jquery/jquery.splitflap.js"></script>
-	<script>
-		(function ($) {
-			$(document).ready(function () {
-				var ratio = 0.5;
-				$('.resized-splitflap')
-						.splitFlap({
-							charWidth:  50 * ratio,
-							charHeight: 100 * ratio,
-							imageSize:  (2500 * ratio) + 'px ' + (100 * ratio) + 'px'
-						});
-			});
-		})(jQuery);
-	</script>
+
 	</body>
 </html>
